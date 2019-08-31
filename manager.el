@@ -22,6 +22,9 @@
   (message "Loading %s depency" name) 
   (load-file (m-fname name)))
 
+(defun m-open (name)
+  (find-file (m-fname name)))
+
 (defun m-create-new (name)
   "Creates a new dependency"
   (unless (file-exists-p (m-fname name))
@@ -58,7 +61,7 @@
   (interactive)
   (let ((name (read-string "[manager] - Dependency name?\n> ")))
     (m-create-new name)
-    (m-reload-dep name)))
+    (m-open name)))
 
 (provide 'manager)
 ;;; manager.el ends here
