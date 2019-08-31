@@ -61,4 +61,5 @@
     (m-reload-dep name)))
 
 (provide 'manager)
+;;; manager.el ends here
 
