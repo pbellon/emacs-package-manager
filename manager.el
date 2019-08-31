@@ -55,7 +55,7 @@
     "Load all defined dependencies"
     (interactive)
     (message "Reloading dependencies")
-    (manager/load-dependencies-list (m-list-dependencies)))
+    (manager/load-dependencies-list (manager/list-dependencies)))
 
 (defun manager/add ()
   "Create a new dependency file in the dependencies config dir, see =manager/dependencies-config-dir="
