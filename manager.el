@@ -15,6 +15,7 @@
   :group 'manager)
 
 (defcustom manager/dependency-template "(use-package %s\n  :ensure t)"
+  "The template to use to create new dependencies lisp files"
   :type 'string
   :group 'manager)
 
